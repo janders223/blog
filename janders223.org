@@ -1,0 +1,31 @@
+#+hugo_base_dir: .
+#+seq_todo: TODO(t) DRAFT(d) | PUBLISHED(p)
+#+property: header-args :eval never-export
+#+startup: indent
+
+
+:PROPERTIES:
+:EXPORT_HUGO_SECTION:
+:END:
+
+* PUBLISHED Test Post :test:foo:
+SCHEDULED: <2020-06-07 Sun>
+:PROPERTIES:
+:EXPORT_FILE_NAME: test-post
+:END:
+This is a test post to see how well this works.
+
+What if I add some code...
+#+BEGIN_SRC bash
+ripgrep something
+#+END_SRC
+* About
+:PROPERTIES:
+:EXPORT_HUGO_SECTION:
+:EXPORT_FILE_NAME: about
+:END:
+** About me
+* COMMENT Local Variables                          :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
