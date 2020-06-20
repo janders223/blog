@@ -24,6 +24,9 @@ SCHEDULED: <2020-06-10 Wed>
 :PROPERTIES:
 :EXPORT_FILE_NAME: terraform-for-each
 :END:
+:LOGBOOK:
+CLOCK: [2020-06-10 Wed 20:10]--[2020-06-10 Wed 21:41] =>  1:31
+:END:
     Today I set out on a mission to refactor some code that has been bothering me for some time. The verbosity of terraform code often often bothers me and I /always/ look for opportunities to [[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRY]] up my code. The particular code of interest here is deploying multiple instances of virtual machines into multiple resource groups in Azure.
 
     The first iteration looked something similar to the following.
@@ -288,6 +291,21 @@ resource "azurerm_linux_virtual_machine" "my-vm" {
   name                    = each.value.name
 }
     #+END_SRC
+* PUBLISHED Loaf of The Week :bread:recipe:
+SCHEDULED: <2020-06-19 Fri>
+:PROPERTIES:
+:EXPORT_FILE_NAME: loaf-19-JUN-20
+:END:
+- Whole Wheat Flour = 50%
+- Buckwheat Flour   = 5%
+- Oat Flour         = 5%
+- Bread Flour       = 40%
+- Water             = 75%
+- Salt              = 2%
+- Yeast             = 1.5%
+- Honey             = 10%
+
+Saw a video where someone mentioned Buckwheat Flour and I wanted to try a loaf. I also did an egg wash on these which I usually don't do. The crumb is very open, moist and flavorful. The crust is amazingly crisp and the loaf is full of flavor.
 * About
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
