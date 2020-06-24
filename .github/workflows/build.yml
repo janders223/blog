@@ -28,4 +28,6 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Push public folder
+        env:
+          AZURE_STORAGE_ACCOUNT: ${{ secrets.STORAGE_ACCOUNT }}
         run: hugo deploy
