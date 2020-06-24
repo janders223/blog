@@ -26,5 +26,7 @@ jobs:
         uses: azure/login@v1.1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Push public folder
         run: |
           az storage blob upload-batch -s public -d '$web' --account-name ${{ secrets.STORAGE_ACCOUNT }}
