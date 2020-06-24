@@ -39,3 +39,7 @@ theme = "pulp"
     pre = "<i class='fa fa-envelope fa-lg'></i>"
     url = "mailto:jimanders223@gmail.com"
     weight = 30
+
+[[deployment.targets]]
+    name = "azure_deploy"
+    URL = "azblob://$web"
