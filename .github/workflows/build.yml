@@ -20,7 +20,7 @@ jobs:
           hugo-version: "latest"
 
       - name: Build
-        run: hugo --minify -t pulp
+        run: hugo -t pulp
 
       - name: Azure Login
         uses: azure/login@v1.1
